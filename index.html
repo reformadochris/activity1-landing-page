@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris's Landing Page</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #3498db;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Hero Section */
+        #hero {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        #hero h1 {
+            font-size: 48px;
+        }
+
+        #hero p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .cta-button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Image in Hero Section */
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        /* About Section */
+        #about {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        #about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Contacts Section */
+        #contacts {
+            padding: 60px 20px;
+            background-color: #1abc9c;
+            color: #fff;
+            text-align: center;
+        }
+
+        #contacts h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            padding: 20px;
+            background-color: #2ecc71;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: scale(1.1);
+            background-color: #27ae60;
+        }
+
+        .contact-item p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Button Animations */
+        button {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        button:hover {
+            animation: bounce 0.5s infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Chris</div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">Importance</a></li>
+            <li><a href="#contacts">Tools</a></li>
+            <li><a href="#footer">Footer</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Chris Reformado</h1>
+        <p>Third Year BSIT Student at Dalubhasaan ng Lungsod ng Lucena</p>
+        <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png" alt="Hero Image" class="hero-image">
+        <button class="cta-button">Get Started</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>The Importance of Web Development</h2>
+        <p>Web development is a critical part of bringing business ideas to life.
+
+            In the 21st century, a solid web presence is essential for any business. This is because it gives potential customers a glimpse into the companys culture and values,whilst also helping with branding and marketing.
+            
+            It also provides customers with a consistent experience across different platforms.</p>
+            <br>
+        <button class="back-button">Back</button>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts">
+        <h2>Tools for Web Development</h2>
+        <div class="contact-details">
+            <div class="contact-item">
+                <h3>HTML</h3>
+                <p>is the standard markup language used for creating and structuring content on the web. It defines the structure and layout of a web page using elements like headings, paragraphs, links, images, and other multimedia.</p>
+            </div>
+            <div class="contact-item">
+                <h3>CSS</h3>
+                <p>is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML.</p>
+            </div>
+            <div class="contact-item">
+                <h3>JavaScript</h3>
+                <p>is a versatile, high-level programming language primarily used to create interactive and dynamic content on websites.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2024 Chris. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Button 'Back' functionality
+        document.querySelector('.back-button').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
